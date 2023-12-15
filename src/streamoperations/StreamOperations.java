@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.toList;
 public class StreamOperations {
 
 
-    // Get transaction in 20111 and sort by value.
+    // Get transaction in 2011 and sort by value.
     public List<Transaction> getTr2011()
     {
         List<Transaction> tr2011 =
