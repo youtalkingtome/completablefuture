@@ -2,6 +2,7 @@ package reducevscollect;
 
 import java.math.BigInteger;
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.IntStream.concat;
@@ -35,9 +36,16 @@ public class ReduceExamples {
                         Double::sum) / numbers.size();
         double standardDeviation = Math.sqrt(variance);
 
-        //building a histogram
+        var statistics = numbers.stream().collect(Collectors.summarizingDouble(s -> s));
+        System.out.print(statistics);
+
         List<Integer> histoGramNumbers = Arrays.asList(1, 2, 1, 3, 3, 3, 4,8,9,45,67,2);
-        Map<Integer, Integer> histogramExample = histoGramNumbers.stream()
+        var result = histoGramNumbers.stream()
+                .collect(Collectors.groupingBy(k -> k, Collectors.counting()));
+
+        //building a histogram
+        List<Integer> histoGramNumbers1 = Arrays.asList(1, 2, 1, 3, 3, 3, 4,8,9,45,67,2);
+        Map<Integer, Integer> histogramExample = histoGramNumbers1.stream()
                 .reduce(new HashMap<Integer, Integer>(),
                         (map, val) -> { map.merge(val, 1, Integer::sum); return map; },
                         (map1, map2) -> { map1.putAll(map2); return map1; });
@@ -54,6 +62,14 @@ public class ReduceExamples {
                         })
                 .stream()
                 .reduce(0, Integer::sum);// Summing the elements of Flattened list.
+        System.out.print("Total Sum using Reduce");
+
+        System.out.print(sumOfElemetnsInNestedLists);
+        int totalSum = nestedList.stream().flatMap(Collection::stream).mapToInt(s -> s).sum();
+        System.out.print("Total Sum");
+        System.out.print(totalSum);
+
+
 
 
 
