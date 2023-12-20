@@ -2,17 +2,12 @@ package reducevscollect;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
-@Setter
-@Getter
-@AllArgsConstructor
 public class RedcueDemo {
     public void main(String args[])
     {
@@ -42,10 +37,10 @@ public class RedcueDemo {
                 .reduce("", (a, b) -> a + b);
         System.out.println("Concatenated String: " + concatenated); // Output: Concatenated String: JavaStreamAPI
 
-        Employee e1=new Employee("IT", 10000, false);
-        Employee e2=new Employee("Commerce", 2000, true);
-        Employee e3=new Employee("Infra", 30000, true);
-        Employee e4=new Employee("Business", 40000, true);
+        Employee e1=new Employee("IT", 10000.20, false);
+        Employee e2=new Employee("Commerce", 2000.98, true);
+        Employee e3=new Employee("Infra", 30000.99, true);
+        Employee e4=new Employee("Business", 40000.56, true);
 
         List<Employee> employees=new LinkedList<Employee>();
         employees.add(e1);
@@ -73,12 +68,52 @@ public class RedcueDemo {
 
     }
 
-    @Getter
-    @Setter
-    @AllArgsConstructor
     class Employee {
         private String department;
         private double salary;
         private boolean isFullTime;
+
+        public Employee(String department, double salary, boolean isFullTime) {
+            this.department = department;
+            this.salary = salary;
+            this.isFullTime = isFullTime;
+        }
+
+        public String getDepartment() {
+            return department;
+        }
+
+        public void setDepartment(String department) {
+            this.department = department;
+        }
+
+        public double getSalary() {
+            return salary;
+        }
+
+        public void setSalary(double salary) {
+            this.salary = salary;
+        }
+
+        public boolean isFullTime() {
+            return isFullTime;
+        }
+
+        public void setFullTime(boolean fullTime) {
+            isFullTime = fullTime;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Employee employee = (Employee) o;
+            return Double.compare(employee.salary, salary) == 0 && isFullTime == employee.isFullTime && Objects.equals(department, employee.department);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(department, salary, isFullTime);
+        }
     }
 }
