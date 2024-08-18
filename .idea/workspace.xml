@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb6a63c-571a-4ad5-971b-43baa28f558b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/completablefuture.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AsynchronousPriceAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindPricesAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetPriceAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetPriceAsyncSupplyAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetPriceParallel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetPriceSync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ParallelAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SynchronousAPI.java" afterDir="false" />
+    <list default="true" id="0fb6a63c-571a-4ad5-971b-43baa28f558b" name="Changes" comment="CompletableFuture">
+      <change afterPath="$PROJECT_DIR$/src/concurrency/RangedSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,63 +23,100 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-20.0.1/Contents/Home/lib/src.zip!/java.base/java/util/Currency.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="2WLvTJjiDSl01q9WU9rixZSaNx6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "onboarding.tips.debug.path": "/Users/vikastaank/Documents/javaprojects/completablefuture/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/vikastaank/Documents/javaprojects/completablefuture/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.FindPricesAPI">
-    <configuration name="FindPricesAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FindPricesAPI" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="concurrency" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RangedSum">
+    <configuration name="AnagramChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnagramChecker" />
       <module name="completablefuture" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetPriceAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetPriceAsync" />
+    <configuration name="ParallelProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.ParallelProcessing" />
       <module name="completablefuture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetPriceAsyncSupplyAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetPriceAsyncSupplyAsync" />
+    <configuration name="ParallelProcessingAcceptAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.ParallelProcessingAcceptAsync" />
       <module name="completablefuture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetPriceParallel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetPriceParallel" />
+    <configuration name="RangedSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.RangedSum" />
       <module name="completablefuture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetPriceSync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetPriceSync" />
+    <configuration name="ReduceExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reducevscollect.ReduceExamples" />
       <module name="completablefuture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reducevscollect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FindPricesAPI" />
-        <item itemvalue="Application.GetPriceAsync" />
-        <item itemvalue="Application.GetPriceAsyncSupplyAsync" />
-        <item itemvalue="Application.GetPriceParallel" />
-        <item itemvalue="Application.GetPriceSync" />
+        <item itemvalue="Application.RangedSum" />
+        <item itemvalue="Application.ParallelProcessingAcceptAsync" />
+        <item itemvalue="Application.ParallelProcessing" />
+        <item itemvalue="Application.AnagramChecker" />
+        <item itemvalue="Application.ReduceExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +129,47 @@
       <option name="presentableId" value="Default" />
       <updated>1696524683377</updated>
     </task>
+    <task id="LOCAL-00001" summary="CompletableFuture">
+      <option name="closed" value="true" />
+      <created>1696546458058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696546458058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e983b600-b609-4996-9016-7519cc88e074" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="e983b600-b609-4996-9016-7519cc88e074">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CompletableFuture" />
+    <option name="LAST_COMMIT_MESSAGE" value="CompletableFuture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -117,7 +179,26 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/reducevscollect/RedcueDemo.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/reducevscollect/ReduceExamples.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/completablefuture$RangedSum.ic" NAME="RangedSum Coverage Results" MODIFIED="1723831564582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>concurrency.*</FILTER>
+    </SUITE>
   </component>
 </project>
