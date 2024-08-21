@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fb6a63c-571a-4ad5-971b-43baa28f558b" name="Changes" comment="CompletableFuture">
-      <change afterPath="$PROJECT_DIR$/src/concurrency/RangedSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrency/FlatMapVariant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrency/InfiniteStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrency/MultiMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrency/TakeAndDrop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,16 +53,9 @@
       <recent name="concurrency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RangedSum">
-    <configuration name="AnagramChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AnagramChecker" />
-      <module name="completablefuture" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="concurrency.ParallelProcessing" />
+  <component name="RunManager" selected="Application.MultiMap">
+    <configuration name="FlatMapVariant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.FlatMapVariant" />
       <module name="completablefuture" />
       <extension name="coverage">
         <pattern>
@@ -71,8 +67,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelProcessingAcceptAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="concurrency.ParallelProcessingAcceptAsync" />
+    <configuration name="InfiniteStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.InfiniteStream" />
+      <module name="completablefuture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.MultiMap" />
       <module name="completablefuture" />
       <extension name="coverage">
         <pattern>
@@ -97,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reducevscollect.ReduceExamples" />
+    <configuration name="TakeAndDrop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrency.TakeAndDrop" />
       <module name="completablefuture" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reducevscollect.*" />
+          <option name="PATTERN" value="concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MultiMap" />
+        <item itemvalue="Application.FlatMapVariant" />
+        <item itemvalue="Application.InfiniteStream" />
+        <item itemvalue="Application.TakeAndDrop" />
         <item itemvalue="Application.RangedSum" />
-        <item itemvalue="Application.ParallelProcessingAcceptAsync" />
-        <item itemvalue="Application.ParallelProcessing" />
-        <item itemvalue="Application.AnagramChecker" />
-        <item itemvalue="Application.ReduceExamples" />
       </list>
     </recent_temporary>
   </component>
